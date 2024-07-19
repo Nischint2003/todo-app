@@ -9,33 +9,62 @@ A simple Todo application built with Node.js, Express, and MongoDB.
 
 ## Setup
 
-1. Clone the repository :
+### 1. Clone the Repository
 
--git clone https://github.com/Nischint2003/todo-app.git
--cd todo-app
+First, clone the repository and navigate into the project directory:
 
-2. Install dependencies:
+```bash
+git clone https://github.com/Nischint2003/todo-app.git
+cd todo-app
+```
 
--npm install
+### 2. Install Dependencies
 
-3. Create a `.env` file in the project root and add the following:
+Install the required dependencies using npm:
 
--PORT=4000
--MONGO_URL=your_mongodb_connection_string
--JWT_SECRET=your_jwt_secret
+```bash
+npm install
+```
 
-4. Start the server:
+### 3. Configure Environment Variables
 
--npm run server
+Create a `.env` file in the project root and add the following configuration settings:
 
-5. The server should now be running on `http://localhost:4000`
+```
+PORT=4000
+MONGO_URL=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret
+```
+
+Replace `your_mongodb_connection_string` and `your_jwt_secret` with your actual MongoDB connection string and JWT secret.
+
+Example of `.env` file:
+
+```
+PORT=4000
+MONGO_URL=mongodb+srv://<username>:<password>@cluster0.mongodb.net/todo-app?retryWrites=true&w=majority
+JWT_SECRET=yourSuperSecretKey
+```
+check .env.example for refrence
+
+### 4. Start the Server
+
+Start the server with the following command:
+
+```bash
+npm run server
+```
+
+The server should now be running on [http://localhost:4000](http://localhost:4000).
 
 ## API Documentation
 
-API documentation is available at `http://localhost:4000/api-docs` when the server is running.
+API documentation is available at [http://localhost:4000/api-docs](http://localhost:4000/api-docs) when the server is running.
 
 ## Running Tests
 
-To run the test suite:
+To run the test suite, use the following command:
 
--npm test
+```bash
+npm test
+```
