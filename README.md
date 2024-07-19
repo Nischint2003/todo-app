@@ -61,6 +61,8 @@ The server should now be running on [http://localhost:4000](http://localhost:400
 
 API documentation is available at [http://localhost:4000/api-docs](http://localhost:4000/api-docs) when the server is running.
 
+Project Documentation : [https://documenter.getpostman.com/view/33382276/2sA3kUG2Ex](https://documenter.getpostman.com/view/33382276/2sA3kUG2Ex)
+
 ## Running Tests
 
 To run the test suite, use the following command:
